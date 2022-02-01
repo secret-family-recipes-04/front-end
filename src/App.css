@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    font-family: sans-serif;
+  
+    /* border:1px solid grey; */
+  }
+  
+  /*General Styles*/
+  html{
+    font-size:62.5%;
+  }
+
+  body{
+      font-size: 2rem;
+  }
+
+  /* header styles */
+  header{
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 2rem 1rem 2rem;
+  }
+
+  header a{
+      margin: 1rem;
+  }
