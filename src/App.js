@@ -2,6 +2,7 @@
 import Header from './components/Header';
 import Home from './components/Home';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
 
 
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Header/>
       <SignUp/>
+      <Login/>
     </div>
   );
 }

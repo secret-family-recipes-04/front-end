@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function SignUp() {
+export default function Login() {
   return (
   <div>
-      <form>
+
+    <form>
 
           <div className='formTitle'>
-              <h1>Sign Up</h1>
+              <h1>Login</h1>
           </div>
 
           <div className='errors-container'>
@@ -25,10 +26,11 @@ export default function SignUp() {
           </div>
 
           <div className='submit'>
-                <button>Sign Up</button>
-                <p>Already have an account? <a href='#'>login</a></p>
+                <button>Login</button>
+                <p>Don't have an account? <a href='#'>Sign up</a></p>
           </div>
 
       </form>
+
   </div>);
 }
