@@ -1,21 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
   <header>
 
       <div className='logo'>
-          <a>Secret Family Recipes</a>
+          <Link to=''>Secret Family Recipes</Link>
       </div>
 
       <nav>
-        <a href='#'>Sign In</a>
-        <a href='#'>Register</a>
+        <Link to='/login'>Sign In</Link>
+        <Link to='/signup'>Register</Link>
         {/* private routes */}
-        <a href='#'>Recipes</a>
-        <a href='#'>New Recipe</a>
-        <a href='#'>Account</a>
-        <a href='#'>Sign Out</a>
+        <Link to='/recipes'>Recipes</Link>
+        <Link to='/recipes/add'>New Recipe</Link>
+        <Link to='/account'>Account</Link>
+        <Link to='/signout'>Sign Out</Link>
       </nav>
 
   </header>);

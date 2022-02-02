@@ -1,6 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate('/signup');
+  }
+
   return (
   <div className='home-container'>
 
@@ -15,8 +23,7 @@ export default function Home() {
     </div>
 
     <div className='home-button'>
-        <button>sign up</button>
-        <p>login</p>
+        <button onClick={handleClick}>sign up</button>
     </div>
 
   </div>);

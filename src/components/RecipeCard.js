@@ -1,5 +1,5 @@
 import React from 'react';
-import recipe1 from './../assets/recipe1.jpg';
+import { Link } from 'react-router-dom';
 
 export default function RecipeCard(props) {
 
@@ -10,11 +10,11 @@ export default function RecipeCard(props) {
       <img src={recipe.image} alt='home-made dish' width='25%'/>
       <div className='recipe-card-info'>
           <div className='recipe-labels'>
-              <h4>{recipe.name}</h4>
+              <Link to={`/recipes/${recipe.id}`} ><h4>{recipe.name}</h4></Link>
           </div>
 
           <div className='recipe-card-links'>
-              <a href='#'>edit</a>
+              <Link to={`/recipes/edit/${recipe.id}`}>edit</Link>
               <a href='#'>remove</a>
           </div>
       </div>
