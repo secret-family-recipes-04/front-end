@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 import myRecipeList from './../mocks/DummyData';
+import { Link } from 'react-router-dom';
 
 export default function RecipeList() {
   return (
@@ -12,10 +13,10 @@ export default function RecipeList() {
           })}
       </div>
       <div id='add-recipe'>
-          <a href='#'>
+          <Link to='/recipes/add'>
               <h2>+</h2>
               <p>Add recipe</p>
-          </a>
+          </Link>
       </div>
   </div>);
 }

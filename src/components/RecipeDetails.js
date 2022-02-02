@@ -8,14 +8,17 @@ export default function RecipeDetails() {
     const { id } = useParams();
     const navigate = useNavigate();
     const [recipe, setRecipe] = useState(myRecipeList[id - 1])
-    
 
     // useEffect(()=>{
     //   make axios call here and set recipe
     // }, [])
 
-    const handleClick = ()=>{
+    const handleEditClick = ()=>{
       navigate(`/recipes/edit/${recipe.id}`)
+    }
+
+    const handleListClick = ()=>{
+      navigate('/recipes')
     }
 
   return (
@@ -29,8 +32,9 @@ export default function RecipeDetails() {
             <p>Prep Time: {recipe.prepTime}</p>
             <p>Cook Time: {recipe.cookTime}</p>
             <div>
-              <button onClick={handleClick}>edit</button>
+              <button onClick={handleEditClick}>edit</button>
               <button>remove</button>
+              <button onClick={handleListClick}>recipe list</button>
             </div>
         </div>
       </div>
