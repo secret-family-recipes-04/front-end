@@ -1,4 +1,5 @@
 import React from 'react';
+import dinner from './../assets/dinnerandwine.png'
 
 export default function AddRecipeForm() {
   return (
@@ -62,5 +63,9 @@ export default function AddRecipeForm() {
       </div>
 
     </form>
+
+    <div  className='recipe-form-img'>
+      <img  src={dinner} alt='dinner with wine illustration' />
+    </div>
   </div>);
 }

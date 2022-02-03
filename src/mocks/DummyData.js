@@ -1,6 +1,4 @@
 
-import recipe1 from './../assets/recipe1.jpg';
-
 const myRecipelist = [
     {id: 1,
     name: 'Casserole',

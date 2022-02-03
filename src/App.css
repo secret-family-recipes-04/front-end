@@ -19,8 +19,14 @@
       background-color: rgb(255, 249, 228);
   }
 
+  h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Source Serif 4', sans-serif;
+  }
+
   a{
       text-decoration: none;
+      font-family: 'Source Serif 4', sans-serif;
+      color: black;
   }
 
   button {
@@ -73,15 +79,10 @@ label{
   }
 
   .logo a{
-    font-family: 'Cedarville Cursive', cursive;
+    /* font-family: 'Cedarville Cursive', cursive; */
     font-weight:bold;   
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
-  }
-
-  nav a{
-    font-family: 'Source Serif 4', sans-serif;
-    color:black;
   }
 
   /* home styles */
@@ -89,18 +90,17 @@ label{
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgb(255, 249, 228);
       margin-top: 5%;
   }
 
   .home-button{
       display:flex;
       justify-content: center;
-      padding: 1rem;
+      padding: 1em;
   }
 
   .home-left{
-      padding: 2em 0 2em 2em;
+      padding: 1rem 0 1rem 2em;
       width:35%;
   }
 
@@ -109,7 +109,7 @@ label{
   }
 
   .home-text h1{
-    font-family: 'Cedarville Cursive', cursive;
+    /* font-family: 'Cedarville Cursive', cursive; */
     font-size: 3em;
     line-height: 100%;
   }
@@ -119,7 +119,6 @@ label{
   }
 
   .home-details p{
-    font-family: 'Source Serif 4', sans-serif;
     font-size: .8em;
   }
 
@@ -137,7 +136,6 @@ label{
   }
 
   .formTitle h1{
-    font-family: 'Source Serif 4', sans-serif;
     font-size: 3rem;
     font-weight: 400;
   }
@@ -154,11 +152,9 @@ label{
   .form-redirect {
       margin-top: 1rem;
       font-size: 1.5rem;
-      font-family: 'Source Serif 4', sans-serif;
   }
 
   .Link{
-    font-family: 'Source Serif 4', sans-serif;
     color: #ca5324;
   }
 
@@ -177,12 +173,14 @@ label{
 .recipe-form-container{
     display:flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 
 .recipe-form-title h1{
-    font-family: 'Source Serif 4', sans-serif;
     font-size: 3rem;
     font-weight: 400;
+    margin-bottom: 1em;
 }
 
 .long-input input{
@@ -203,6 +201,17 @@ label{
     position: center;
 }
 
+.recipe-form-img img{
+    width:350px;
+    margin-top: 250px;
+}
+
+#tall-illustration img{
+    width:200px;
+    margin-top: 150px;
+    padding-left: 6rem;
+}
+
 /* recipe card styling */
 .recipe-card-container{
     width:15em;
@@ -215,22 +224,20 @@ label{
 }
 
 .recipe-card-info h4{
-    font-family: 'Source Serif 4', sans-serif;
     font-weight: 400;
+    border-bottom: 1px solid black;
     color: black;
 }
 
 .recipe-card-links a{
     margin: .6rem;
     font-size: 1.5rem;
-    font-family: 'Source Serif 4', sans-serif;
-    color: black;
     border-bottom: 1px solid black;
+    color: black;
+    
 }
 
 #card-img{
-    /* max-width: 100%;
-    max-height:100%; */
     object-fit: cover;
     width: 15em;
     height: 15em;
@@ -239,13 +246,7 @@ label{
 /* recipe list styling */
 #my-recipes{
     height: 25vh;
-    /* background-color: blue; */
-    font-family: 'Source Serif 4', sans-serif;
     margin-top: 10rem;
-}
-
-#my-recipes h1{
-    font-family: 'Source Serif 4', sans-serif;
 }
 
 .list-header{
@@ -270,7 +271,7 @@ label{
     margin-top: 1%;
     margin-bottom: 5.6%;
     margin-left: 1%;
-    padding: 6.2% 7% 4.9% 7%;
+    padding: 4% 7% 4.9% 7%;
     text-align: center;
     height: 300px;
     width: 300px;
@@ -282,7 +283,6 @@ label{
   }
 
   #add-recipe p{
-    font-family: 'Source Serif 4', sans-serif;
     color: rgb(255, 249, 228);
 }
 
@@ -295,12 +295,11 @@ label{
 
 .top-container img{
     object-fit: cover;
-    width: 30%;
-    height: 16em; 
+    width: 16em;
+    height: 17em; 
 }
 
 #to-recipe-list{
-    font-family: 'Source Serif 4', sans-serif;
     font-size: 1.2rem;
     color: #ca5324;
     padding-top: 1rem;
@@ -321,12 +320,10 @@ label{
 }
 
 .recipe-info-text img{
-    height:170px;
+    height:175px;
+    width:225px;
     margin-left: 3em;
-}
-
-.recipe-info-text h1, p{
-    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 10px;
 }
 
 .recipe-info-text h1{
@@ -345,7 +342,7 @@ label{
     justify-content: space-between;
     margin-top: 3em;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 7em;
 }
 
 .ingredients{
@@ -359,7 +356,6 @@ label{
 .ingredients h3, .instructions h3{
     color: #ca5324;
     margin-bottom: 2rem;
-    font-family: 'Source Serif 4', sans-serif;
 }
 
 li {

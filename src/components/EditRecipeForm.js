@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import myRecipelist from '../mocks/DummyData';
+import bowl from './../assets/pot.png'
 
 export default function EditRecipeForm(props) {
   const navigate = useNavigate();
@@ -108,6 +109,11 @@ export default function EditRecipeForm(props) {
       </div>
 
     </form>
+
+    <div  className='recipe-form-img' id='tall-illustration'>
+      <img  src={bowl} alt='dinner prep bowl illustration' />
+    </div>
+
   </div>);
 }
 
