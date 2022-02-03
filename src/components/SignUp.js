@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import chef from './../assets/chefsalt.png';
 
 const initialFormValues = {
         email: '',
@@ -48,11 +49,12 @@ export default function SignUp() {
    }
 
   return (
-  <div>
+  <div className='form-container'>
+      
       <form onSubmit={handleSubmit}>
 
           <div className='formTitle'>
-              <h1>Sign Up</h1>
+              <h1>Register</h1>
           </div>
 
           <div className='errors-container'>
@@ -72,9 +74,12 @@ export default function SignUp() {
 
           <div className='submit'>
                 <button>Sign Up</button>
-                <p>Already have an account? <Link to='/login'>login</Link></p>
+                <p className='form-redirect'>Already have an account? <Link className='Link' to='/login'>login</Link></p>
           </div>
 
       </form>
+      <div className='form-img'>
+        <img src={chef} alt='chef illustration'/>
+    </div>
   </div>);
 }

@@ -47,11 +47,11 @@ export default function EditRecipeForm(props) {
   
 
   return (
-  <div className='edit-recipe'>
-    <form className='form-container' onSubmit={handleSubmit}>
+  <div className='recipe-form-container'>
+    <form onSubmit={handleSubmit}>
 
-      <div className='form-title'>
-        <h1>Edit {name} Recipe</h1>
+      <div className='recipe-form-title'>
+        <h1>Edit Recipe</h1>
       </div>
 
       <div>
@@ -92,19 +92,19 @@ export default function EditRecipeForm(props) {
 
       <div>
         <label>Ingredients
-        <input value={ingredients} onChange={handleChange} type='text' name='ingredients'/>
+        <input className='long-input' value={ingredients} onChange={handleChange} type='text' name='ingredients'/>
         </label>
       </div>
 
       <div>
         <label>Instructions
-        <input value={instructions} onChange={handleChange} type='text' name='instructions'/>
+        <input className='long-input' value={instructions} onChange={handleChange} type='text' name='instructions'/>
         </label>
       </div>
 
-      <div>
+      <div className='edit-buttons'>
         <button>Save</button>
-        <button onClick={handleCancel}>Cancel</button>
+        <button id='cancel' onClick={handleCancel}>Cancel</button>
       </div>
 
     </form>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import chef from './../assets/chefpeppers.png'
 
 export default function Login() {
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function Login() {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        axios.post('http://bw.herokuapp.com/api/users', cred)
+        axios.post('https://secret-family-recipe-bw.herokuapp.com/api/users', cred)
         .then(res=>{
             console.log('result', res);
             // localStorage.setItem('token', res.data.token);
@@ -27,12 +28,12 @@ export default function Login() {
     }
 
   return (
-  <div>
-
-    <form onSubmit={handleSubmit}>
-
+  <div className='form-container'>
+    
+    <form className='login-form' onSubmit={handleSubmit}>
+            
           <div className='formTitle'>
-              <h1>Login</h1>
+              <h1>Sign In</h1>
           </div>
 
           <div className='errors-container'>
@@ -45,17 +46,19 @@ export default function Login() {
           </div>
 
           <div className='password-input'>
-              <label>Password
+              <label className='form-spacing'>Password
               <input onChange={handleChange} name='password' type='password'/>
               </label>
           </div>
 
           <div className='submit'>
                 <button>Login</button>
-                <p>Don't have an account? <Link to='/signup'>Sign up</Link></p>
+                <p className='form-redirect'>Don't have an account? <Link className='Link' to='/signup'>Sign up</Link></p>
           </div>
 
       </form>
-
+    <div className='form-img'>
+        <img src={chef} alt='chef illustration'/>
+    </div>
   </div>);
 }

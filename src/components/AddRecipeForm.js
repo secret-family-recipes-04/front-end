@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function AddRecipeForm() {
   return (
-  <div>
-    <form className='form-container'>
+  <div className='recipe-form-container'>
+    <form>
 
-      <div className='form-title'>
+      <div className='recipe-form-title'>
         <h1>Add Recipe</h1>
       </div>
 
@@ -57,7 +57,7 @@ export default function AddRecipeForm() {
         </label>
       </div>
 
-      <div>
+      <div className='submit'>
         <button>Save</button>
       </div>
 

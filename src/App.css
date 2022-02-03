@@ -11,19 +11,362 @@
   /*General Styles*/
   html{
     font-size:62.5%;
+    
   }
 
   body{
       font-size: 2rem;
+      background-color: rgb(255, 249, 228);
   }
+
+  a{
+      text-decoration: none;
+  }
+
+  button {
+     padding: .7rem; 
+     background-color: black;
+     color: rgb(255, 249, 228);
+     width: 200px;
+     border: 1.5px solid black;
+     font-family: 'Source Serif 4', sans-serif;
+  }
+
+  button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+  input, label{
+    display:block;
+
+}
+
+input{
+    width: 500px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+label{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1.5rem;
+}
 
   /* header styles */
   header{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin: 1rem 2rem 1rem 2rem;
   }
 
   header a{
       margin: 1rem;
+      font-size: 1.5rem;
   }
+
+  header a:hover{
+      font-weight: bold;
+  }
+
+  .logo a{
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight:bold;   
+    font-size: 2em;
+    color: black;
+  }
+
+  nav a{
+    font-family: 'Source Serif 4', sans-serif;
+    color:black;
+  }
+
+  /* home styles */
+  .home-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 249, 228);
+      margin-top: 5%;
+  }
+
+  .home-button{
+      display:flex;
+      justify-content: center;
+      padding: 1rem;
+  }
+
+  .home-left{
+      padding: 2em 0 2em 2em;
+      width:35%;
+  }
+
+  .home-right{
+      width: 45%;
+  }
+
+  .home-text h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3em;
+    line-height: 100%;
+  }
+
+  .home-details{
+      padding-top: 2rem;
+  }
+
+  .home-details p{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: .8em;
+  }
+
+  /* login/sign-up form styles */
+
+  .form-container{
+      display:flex;
+      justify-content: center;
+      margin-top: 10%;
+  }
+
+  .formTitle{
+      margin-bottom: 2rem;
+      text-align: center;
+  }
+
+  .formTitle h1{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .submit{
+      margin-top: 2rem;
+  }
+
+  .submit button{
+      width: 500px;
+      
+  }
+
+  .form-redirect {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-family: 'Source Serif 4', sans-serif;
+  }
+
+  .Link{
+    font-family: 'Source Serif 4', sans-serif;
+    color: #ca5324;
+  }
+
+  .password-input{
+    margin-top: 2rem;
+}
+
+.form-img{
+    width: 25%;
+    padding: 2.5rem;
+    display: flex;
+    align-content: center;
+}
+
+/* recipe form styling */
+.recipe-form-container{
+    display:flex;
+    justify-content: center;
+}
+
+.recipe-form-title h1{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.long-input input{
+    height: 5em;
+}
+
+.edit-buttons button{
+    width: 240px;
+}
+
+.edit-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+#cancel{
+    position: center;
+}
+
+/* recipe card styling */
+.recipe-card-container{
+    width:15em;
+    margin: 1%;
+}
+
+.recipe-card-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-card-info h4{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.recipe-card-links a{
+    margin: .6rem;
+    font-size: 1.5rem;
+    font-family: 'Source Serif 4', sans-serif;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+#card-img{
+    /* max-width: 100%;
+    max-height:100%; */
+    object-fit: cover;
+    width: 15em;
+    height: 15em;
+}
+
+/* recipe list styling */
+#my-recipes{
+    height: 25vh;
+    /* background-color: blue; */
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 10rem;
+}
+
+#my-recipes h1{
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.list-header{
+    display: flex;
+    justify-content: center;
+}
+
+.list-header img{
+    width: 15%;
+    padding: 3em;
+}
+
+.list-container{
+    background-color: white;
+    padding: 3em 9em 5em 9em;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#add-recipe {
+    background-color: #ca5324;
+    margin-top: 1%;
+    margin-bottom: 5.6%;
+    margin-left: 1%;
+    padding: 6.2% 7% 4.9% 7%;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  #add-recipe h2{
+      font-size: 7rem;
+      color: rgb(255, 249, 228);
+  }
+
+  #add-recipe p{
+    font-family: 'Source Serif 4', sans-serif;
+    color: rgb(255, 249, 228);
+}
+
+/* recipe details styling */
+.top-container{
+    display: flex;
+    justify-content: center;
+    margin: 5em 1em 1em 1em;
+}
+
+.top-container img{
+    object-fit: cover;
+    width: 30%;
+    height: 16em; 
+}
+
+#to-recipe-list{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1.2rem;
+    color: #ca5324;
+    padding-top: 1rem;
+}
+
+.recipe-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:40%;
+    margin-left: 3rem;
+    background-color: rgb(228, 222, 201);
+    padding: 2em;
+}
+
+.recipe-info-text{
+    display: flex;
+}
+
+.recipe-info-text img{
+    height:170px;
+    margin-left: 3em;
+}
+
+.recipe-info-text h1, p{
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.recipe-info-text h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.button-container button{
+    margin-right: 3rem;
+    width: 100px;
+}
+
+.bottom-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.ingredients{
+    width: 30%;
+}
+
+.instructions{
+    width: 55%;
+}
+
+.ingredients h3, .instructions h3{
+    color: #ca5324;
+    margin-bottom: 2rem;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+li {
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 500;
+}
+  
+  
+  
+  
