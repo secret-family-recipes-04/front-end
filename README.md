@@ -6,6 +6,10 @@
 - Solving the Problem: Secret Family Recipes provides a user friendly interface to digitally store and access family recipes.
 - Mission Statement: keep your family recipes alive – preserve your secret recipes in a secure place
 
+## **Sign In**
+- Create a new account and login
+- Or login with email: test@gmail.com password: 1234
+
 ## ✅  **MVP**
 
 1. `user` can sign-up / create an account by providing a unique `username(email)` and a `password`. 
