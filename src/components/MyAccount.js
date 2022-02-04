@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axiosWithAuth from '../utils/axiosWithAuth';
 
 export default function MyAccount() {
+
+
+  const [user, setUser] = useState({
+    email: localStorage.getItem('email'),
+    password: ''
+  });
+
+  const handleChange = e => {
+    setUser({
+        ...user,
+        [e.target.name]: e.target.value
+    })
+}
+
+useEffect(()=>{
+  setUser(user)
+},[]);
+
+
   return (
   <div className='form-container'>
 
@@ -15,7 +35,19 @@ export default function MyAccount() {
 
     <div className='email-input'>
         <label>Update Email
-        <input name='email' type='text'/>
+        <input name='email' type='text' value={user.email} onChange={handleChange}/>
+        </label>
+    </div>
+
+    <div className='password-input'>
+        <label>Current Password
+        <input name='password' type='password'/>
+        </label>
+    </div>
+
+    <div className='password-input'>
+        <label>Confirm Current Password
+        <input name='password' type='password'/>
         </label>
     </div>
 

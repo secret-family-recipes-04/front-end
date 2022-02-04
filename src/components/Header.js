@@ -7,7 +7,7 @@ export default function Header(props) {
   useEffect(()=>{
     console.log('logged in?', loggedIn)
     token !== null ? setLoggedIn(true) : setLoggedIn(false);
-  }, [token])
+  }, [loggedIn, token])
 
   return (
   <header>

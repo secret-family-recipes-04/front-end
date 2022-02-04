@@ -247,7 +247,10 @@ label{
 #my-recipes{
     height: 25vh;
     margin-top: 10rem;
+    font-weight: 400;
 }
+
+
 
 .list-header{
     display: flex;

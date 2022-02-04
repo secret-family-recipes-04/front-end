@@ -9,7 +9,7 @@ export default function RecipeCard(props) {
   <div className='recipe-card-container'>
       
       <div className='recipe-card-img'>
-      <img id='card-img' src={recipe.image} alt='home-made dish'/>
+      <Link id='card-title' to={`/recipes/${recipe.id}`} ><img id='card-img' src={recipe.image} alt='home-made dish'/></Link>
       </div>
 
       <div className='recipe-card-info'>

@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import chef from './../assets/chefpeppers.png'
 
-export default function Login() {
+export default function Login({ setLoggedIn }) {
     const navigate = useNavigate();
     const [cred, setCred] = useState({email: '', password: ''});
 
@@ -20,14 +20,16 @@ export default function Login() {
         .then(res=>{
             console.log('result', res);
             localStorage.setItem('token', res.data.token);
+            localStorage.setItem('email', cred.email);
+            setLoggedIn(true)
             navigate('/recipes');
         })
         .catch(err=>{
             console.log(err);
         })
-    }
 
-    console.log('local storage', localStorage);
+        
+    }
 
   return (
   <div className='form-container'>

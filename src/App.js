@@ -26,8 +26,9 @@ function App() {
  
   useEffect(()=>{
     setRecipes(myRecipelist);
+    token !== null ? setLoggedIn(true) : setLoggedIn(false);
     // axios call here when api is working
-  }, [])
+  }, [token])
 
 
   return (
@@ -37,14 +38,13 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route path='/signup' element={<SignUp/>}/>
-          <Route path='/login' element={<Login/>}/>
-          
+          <Route path='/login' element={<Login setLoggedIn={setLoggedIn}/>}/>
           <Route path='/recipes/:id' element={<RecipeDetails/>}/>
           <Route exact path='/recipes' element={<PrivateRoute><RecipeList/></PrivateRoute>}/>
           <Route path='recipes/edit/:id' element={<PrivateRoute><EditRecipeForm setRecipes={setRecipes}/></PrivateRoute>}/>
           <Route path='/recipes/add' element={<PrivateRoute><AddRecipeForm/></PrivateRoute>}/>
           <Route path='/account' element={<PrivateRoute><MyAccount/></PrivateRoute>}/>
-          <Route path='/logout' element={<PrivateRoute><SignOut/></PrivateRoute>}/>
+          <Route path='/logout' element={<PrivateRoute><SignOut setLoggedIn={setLoggedIn}/></PrivateRoute>}/>
         </Routes>
       
     </div>
