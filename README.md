@@ -2,9 +2,9 @@
 
 ## ☝️ **Pitch**
 
-The Problem: Handwritten recipes are hard to keep organized and easy to access
-Solving the Problem: Secret Family Recipes provides a user friendly interface to digitally store and access family recipes.
-Mission Statement: keep your family recipes alive – preserve your secret recipes in a secure place
+- The Problem: Handwritten recipes are hard to keep organized and easy to access
+- Solving the Problem: Secret Family Recipes provides a user friendly interface to digitally store and access family recipes.
+- Mission Statement: keep your family recipes alive – preserve your secret recipes in a secure place
 
 ## ✅  **MVP**
 
