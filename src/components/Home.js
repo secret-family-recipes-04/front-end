@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             
             <div className='scroll'>
-                  <p>(scroll down)</p>
+                  <p>(scroll)</p>
             </div>
           </div>
 
