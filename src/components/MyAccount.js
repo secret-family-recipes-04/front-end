@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axiosWithAuth from '../utils/axiosWithAuth';
+import { useNavigate } from 'react-router-dom';
 
 export default function MyAccount() {
-
+  const navigate = useNavigate();
 
   const [user, setUser] = useState({
     email: localStorage.getItem('email'),
@@ -16,6 +17,11 @@ export default function MyAccount() {
     })
 }
 
+  const handleSubmit = e =>{
+    e.preventDefault();
+    navigate(-1)
+  }
+
 useEffect(()=>{
   setUser(user)
 },[]);
@@ -24,7 +30,7 @@ useEffect(()=>{
   return (
   <div className='form-container'>
 
-    <form>
+    <form onSubmit={handleSubmit}>
 
     <div className='formTitle'>
         <h1>Account Info</h1>

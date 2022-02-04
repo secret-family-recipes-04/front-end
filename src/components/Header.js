@@ -10,7 +10,7 @@ export default function Header(props) {
   }, [loggedIn, token])
 
   return (
-  <header>
+  <header id='header'>
 
       <div className='logo'>
           <Link to=''>Secret Family Recipes</Link>

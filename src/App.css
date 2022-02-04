@@ -69,6 +69,10 @@ label{
       margin: 1rem 2rem 1rem 2rem;
   }
 
+  #header{
+      background-color: transparent;
+  }
+
   header a{
       margin: 1rem;
       font-size: 1.5rem;
@@ -86,6 +90,63 @@ label{
   }
 
   /* home styles */
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow-y: scroll;
+  }
+  
+  .container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 95vh;
+  }
+
+  /* #preview{
+      padding: 5%;
+      justify-content: center;
+  } */
+
+.split-left{
+    text-align: center;
+    /* padding-bottom: 20%; */
+}
+
+.split-right{
+    text-align: center;
+    width: 30%;
+    /* padding-top: 20%; */
+}
+
+.split-left h1, .split-right h1{
+    margin-right: 5rem;
+    font-size: 2em;
+    /* font-weight: 400; */
+    color: rgb(0, 0, 0);
+}
+
+  .screenshot{
+      width: 30em;
+  }
+
+  .preview-recipes{
+      display: flex;
+      justify-content: center;
+      background-color: #fffff4;
+  }
+
+  #blue{
+      background-color: rgb(231, 242, 250);
+  }
+
+  #orange{
+      background-color: rgb(234, 241, 233);
+  }
+
   .home-container{
       display: flex;
       align-items: center;
@@ -120,6 +181,27 @@ label{
 
   .home-details p{
     font-size: .8em;
+  }
+
+  .scroll{
+      margin-top: 200px;
+      text-align: center;
+      /* padding-left: 100px; */
+  }
+
+
+  .scroll p, .keep-scrolling{
+      font-size: 2em;
+      line-height: 40%;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+
+  .keep-scrolling{
+      margin-top: 3em;
+  }
+
+  #signUpHere{
+      text-decoration: underline;
   }
 
   /* login/sign-up form styles */

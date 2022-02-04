@@ -3,12 +3,12 @@ import RecipeCard from './RecipeCard';
 import myRecipeList from './../mocks/DummyData';
 import { Link } from 'react-router-dom';
 
+
 export default function RecipeList() {
   return (
   <div className='recipe-list-container'>
       <div className='list-header'>
       <h1 id='my-recipes'>My Recipes</h1>
-      {/* <img src={recipe} alt='recipe illustration'/> */}
       </div>
 
       <div className='list-container'>
