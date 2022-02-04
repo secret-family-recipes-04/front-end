@@ -16,16 +16,18 @@ export default function Login() {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        axios.post('https://secret-family-recipe-bw.herokuapp.com/api/users', cred)
+        axios.post('https://secret-family-recipe-bw.herokuapp.com/api/auth/login', cred)
         .then(res=>{
             console.log('result', res);
-            // localStorage.setItem('token', res.data.token);
-            // navigate('/recipes');
+            localStorage.setItem('token', res.data.token);
+            navigate('/recipes');
         })
         .catch(err=>{
             console.log(err);
         })
     }
+
+    console.log('local storage', localStorage);
 
   return (
   <div className='form-container'>

@@ -20,13 +20,13 @@ export default function SignUp() {
    const navigate = useNavigate();
 
    const signUp = ()=>{
-       axios.post('https://secret-family-recipe-bw.herokuapp.com/api/users/signup', {
+       axios.post('https://secret-family-recipe-bw.herokuapp.com/api/auth/register', {
            'email': formValues.email,
            'password': formValues.password
        })
        .then(res=>{
            console.log('sign up post req result:', res);
-        //    navigate('/login');
+           navigate('/login');
        })
        .catch(err=>{
            console.log(err);
